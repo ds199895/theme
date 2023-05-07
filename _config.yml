@@ -1,0 +1,105 @@
+### Site Settings ###
+title               : Institute of Architectural Algorithms & Applications
+short_title         : Inst. AAA
+description         : >-
+                      I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production.
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : Inst-AAA/archialgo.com     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : archialgo/theme
+open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags_project.html
+  - pages/tags_publication.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Inst. AAA
+  image             : http://labaaa.org/wp-content/uploads/2019/10/ga1.jpg
+  wordpress         :
+  github            : Inst-AAA
+  wechat            : x-0MOMmJHwukVPMB0Qfmow
+  bilibili          : 619912386
+# youtube           : instaaa1324
+  email             : moyichen@seu.edu.cn
+
+
+### Posts ###
+# permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  people:
+    output: true
+    permalink: /people/:name
+  publications:
+    output: true
+    permalink: /publications/:name
+  news:
+    output: true
+    permalink: /news/:name
+
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Buy me a coffee ###
+# See https://www.buymeacoffee.com/
+buymeacoffee:
+  enabled: false
+  username: your_username
+  color: "#C54B24"
+  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
+  description: "Support me on Buy me a coffee!"
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+      comment: true
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
